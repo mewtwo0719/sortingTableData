@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            border: 1px solid steelblue;
+            padding: 5px 5px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, .7);
+        }
+        table{
+            border: 1px solid cadetblue;
+            background-color: cadetblue;
+            padding: 15px;
+            border-radius: 20px;
+        }
+ 
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <table id="data">
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            <tr class="row">
+                <td>
+                    <Button disabled=true>Sort</Button>
+                </td>
+                <td>
+                    <Button onclick="sort('first_name', 'asc')">Asc</Button>
+                    <Button onclick="sort('first_name', 'desc')">Desc</Button>
+                </td>
+                <td>
+                    <Button onclick="sort('last_name', 'asc')">Asc</Button>
+                    <Button onclick="sort('last_name', 'desc')">Desc</Button>
+                </td>
+            </tr>
+        </table>
+
+
+    </div><!--container-->
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
